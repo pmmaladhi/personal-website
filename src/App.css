@@ -1,0 +1,178 @@
+
+.homepage {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 64px;
+}
+
+/* HEADER */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #D8D0C2;
+}
+
+.name-block h1 {
+  margin: 0;
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #263D32;
+}
+
+.pronunciation {
+  margin: 1px 0 0;
+  color: #8D806F;
+  font-size: 0.78rem;
+  letter-spacing: 0.5px;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.navigation a {
+  color: #5C6658;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: #A58A70;
+}
+
+/* HERO */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: center;
+  gap: 48px;
+  padding: 90px 0 105px;
+}
+
+.hero-text {
+  max-width: 620px;
+}
+
+.eyebrow {
+  color: #78866C;
+  font-size: 0.72rem;
+  letter-spacing: 2px;
+  margin-bottom: 24px;
+}
+
+.hero h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -1px;
+  margin: 0;
+  color: #263D32;
+}
+
+.hero-description {
+  max-width: 440px;
+  margin-top: 28px;
+  color: #716D61;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* PORTRAIT */
+
+.portrait {
+  width: 100%;
+  max-width: 270px;
+  justify-self: end;
+  margin: 0;
+}
+
+.portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 25%;
+  border-radius: 3px;
+}
+
+.portrait figcaption {
+  margin-top: 12px;
+  text-align: center;
+  color: #8D806F;
+  font-family: 'EB Garamond', serif;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+/* CONTENT SECTIONS */
+
+.content-section {
+  padding: 55px 0;
+  border-top: 1px solid #D8D0C2;
+}
+
+.content-section h2 {
+  font-family: 'EB Garamond', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin: 0 0 12px;
+  color: #263D32;
+}
+
+.content-section p {
+  color: #716D61;
+  line-height: 1.7;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 40px 0 20px;
+  color: #8D806F;
+  font-size: 0.8rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .homepage {
+    padding: 32px 24px;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navigation {
+    gap: 14px 20px;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding: 75px 0 85px;
+  }
+
+  .hero h2 {
+    font-size: clamp(2.6rem, 9vw, 3.5rem);
+  }
+
+  .portrait {
+    max-width: 230px;
+    justify-self: center;
+  }
+}
